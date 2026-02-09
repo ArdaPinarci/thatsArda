@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <title>Hi, its me Arda | Home</title>
+</head>
+<body>
+    <header>
+    <a href="#" class="logo">Arda</a> <i class="fa-solid fa-bars" id="menu-icon" style="display: none; font-size: 3rem; color: #b74b4b; cursor: pointer;"></i>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="Pages/Services.html">Services</a>
+    </nav>
+</header>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Arda</span></h1>
+            <p>Hi, I'm a web developer. I create websites for my clients and publish them online. by the way im 16 years old For more information, you can check my Bionluk account or contact me via Instagram.</p>
+            <div class="social-icons">
+                <a href="https://github.com/ArdaPinarci"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/ardapinarcii_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="tel:+905526978723" class="btn">Contact me</a>
+        </div>
+    </section>
+</body>
+
+<script>
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('nav');
+
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle('fa-xmark'); // İkonu X işaretine dönüştürür
+        navbar.classList.toggle('active');     // Menüyü açar/kapatır
+    }
+</script>
+
+</html>
